@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+@font-face {
+    font-family: 'Onyx';
+    src: url(/media/ONYX.TTF);
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(/media/bg_troll.jfif);
+    background-position: top;
+    background-size: 8%;
+}
+
+header {
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.24);
+    background: linear-gradient(to bottom, rgba(60, 255, 0, 0.726)30%, rgba(60, 255, 0, 0.3)60%);
+    font-family: cursive, 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+main {
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    color: white;
+    text-align: center;
+    margin-top: 600px;
+}
+
+section {
+    display: block;
+    padding-bottom: 50px;
+}
+
+section h1 {
+    background-color: rgba(0, 0, 0, 0.61);
+    font-family: 'Onyx', monospace;
+    padding-bottom: 10px;
+    font-weight: 100;
+    font-size: 3em;
+    text-shadow: 3px 3px rgba(211, 17, 17, 0.54);
+}
+
+.colorido {
+    background: linear-gradient(to right, #FF0000 14%, #FF7F00 28%, #FFFF00 42%, #00FF00 56%, #0000FF 70%, #4B0082 84%, #8F00FF 0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#btnEncrypt {
+    padding: 10px;
+    margin: 15px auto;
+    cursor: pointer;
+    display: block;
+    border: 1px solid rgb(189, 145, 229);
+    background-color: transparent;
+    color: white;
+}
+
+#btnEncrypt:hover {
+    transition-duration: 0.3s;
+    border: 1px solid red;
+    color: red;
+    background-color: black;
+}
+
+section > #erro {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: red;
+    font-size: 1.4em;
+    font-family: 'Cutive Mono', monospace;
+    padding: 15px;
+}
+
+section textarea {
+    background-color: white;
+    resize: none;
+    padding: 10px;
+    font-size: 1.3em;
+    font-family: 'Cutive Mono', monospace;
+    text-align: center;
+    width: 500px; 
+    height: 150px; 
+}
+
+section#sectionFinal {
+    display: none;
+}
